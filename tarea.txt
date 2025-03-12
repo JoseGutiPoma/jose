@@ -1,0 +1,309 @@
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 ~
+$ cd /c/repo
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git log --oneline
+634329a (HEAD -> master) Correccion en div container
+ae497e9 Agreganod blog y bootstrap
+d11fc06 Tercer commit ejercicio resuelto
+3bbc4e9 Segundo commit
+cf4c604 Primer commit
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ @^C
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git config --global user.name "JoseGtiPoma"
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git config --global user.email "laif.dark.dars@gmail.com"
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=JoseGtiPoma
+user.email=laif.dark.dars@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git remote add origin https://github.com/JoseGutiPoma/repo.git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git log
+commit 634329ae7e3301e91cd6fd842db9344238c23ffd (HEAD -> master)
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 22:00:53 2025 -0400
+
+    Correccion en div container
+
+commit ae497e9e441d25ca18aca5bdb125466a6bb53df5
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 21:57:05 2025 -0400
+
+    Agreganod blog y bootstrap
+
+commit d11fc06741a91e4992a4a896dd8547cc77c97728
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 21:37:15 2025 -0400
+
+    Tercer commit ejercicio resuelto
+
+commit 3bbc4e9d7eb55d1d42920af195df12bdb537dbe5
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 20:57:44 2025 -0400
+
+    Segundo commit
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git remote -v
+origin  https://github.com/JoseGutiPoma/repo.git (fetch)
+origin  https://github.com/JoseGutiPoma/repo.git (push)
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ git push origin master
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (28/28), 3.66 KiB | 416.00 KiB/s, done.
+Total 28 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/JoseGutiPoma/repo.git
+ * [new branch]      master -> master
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/repo (master)
+$ cd ..
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c
+$ cd otrorepo
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ git clone https://github.com/Emergentes/repo.git
+Cloning into 'repo'...
+error: RPC failed; curl 56 Recv failure: Connection was reset
+fatal: expected 'packfile'
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ git clone "https://github.com/Emergentes/repo"
+Cloning into 'repo'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 28 (delta 17), reused 28 (delta 17), pack-reused 0 (from 0)
+Receiving objects: 100% (28/28), done.
+Resolving deltas: 100% (17/17), done.
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ git push
+fatal: not a git repository (or any of the parent directories): .git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ git push origin master
+fatal: not a git repository (or any of the parent directories): .git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ git push origin master
+fatal: not a git repository (or any of the parent directories): .git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo
+$ cd jose/
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+remote: Permission to Emergentes/repo.git denied to JoseGutiPoma.
+fatal: unable to access 'https://github.com/Emergentes/repo/': The requested URL returned error: 403
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote add origin https://github.com/JoseGutiPoma/repo.git
+error: remote origin already exists.
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote set-url origin https://github.com/JoseGutiPoma/repo.git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/JoseGutiPoma/repo.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote -v
+origin  https://github.com/JoseGutiPoma/repo.git (fetch)
+origin  https://github.com/JoseGutiPoma/repo.git (push)
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+Everything up-to-date
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git add .
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git commit -m "subida"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+Everything up-to-date
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote -v
+origin  https://github.com/JoseGutiPoma/repo.git (fetch)
+origin  https://github.com/JoseGutiPoma/repo.git (push)
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git log
+commit 634329ae7e3301e91cd6fd842db9344238c23ffd (HEAD -> master, origin/master, origin/HEAD)
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 22:00:53 2025 -0400
+
+    Correccion en div container
+
+commit ae497e9e441d25ca18aca5bdb125466a6bb53df5
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 21:57:05 2025 -0400
+
+    Agreganod blog y bootstrap
+
+commit d11fc06741a91e4992a4a896dd8547cc77c97728
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 21:37:15 2025 -0400
+
+    Tercer commit ejercicio resuelto
+
+commit 3bbc4e9d7eb55d1d42920af195df12bdb537dbe5
+Author: Mario Torrez Dev <infoemergentes@gmail.com>
+Date:   Tue Feb 25 20:57:44 2025 -0400
+
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote -v
+origin  https://github.com/JoseGutiPoma/repo.git (fetch)
+origin  https://github.com/JoseGutiPoma/repo.git (push)
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+Everything up-to-date
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote swt-url origin https://github.com/JoseGutiPoma/jose.git
+error: unknown subcommand: `swt-url'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote swt-url origin https://github.com/JoseGutiPoma/jose.git
+error: unknown subcommand: `swt-url'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git remote set-url origin https://github.com/JoseGutiPoma/jose.git
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/JoseGutiPoma/jose.git/': Failed to connect to github.com port 443 after 42606 ms: Couldn't connect to server
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$git premote set-url origin https://github.com/JoseGutiPoma/jose
+
+LAB-SOFT@DESKTOP-OOHIFEF MINGW64 /c/otrorepo/jose (master)
+$ git push origin master
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (28/28), 3.66 KiB | 3.66 MiB/s, done.
+Total 28 (delta 17), reused 28 (delta 17), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/JoseGutiPoma/jose
+ * [new branch]      master -> master
+
